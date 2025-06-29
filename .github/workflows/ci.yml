@@ -1,3 +1,11 @@
+name: Iris Pipeline CI
+
+on:
+  push:
+    branches: [dev]
+  pull_request:
+    branches: [main]
+
 jobs:
   test-and-report:
     runs-on: ubuntu-latest
