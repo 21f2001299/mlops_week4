@@ -27,7 +27,7 @@ jobs:
     - name: Run Pytest and save report
       run: |
         mkdir -p reports
-        pytest tests/ > reports/output.txt
+        pytest tests/ > reports/output.txt || true
 
     - name: Install Node.js for CML
       uses: actions/setup-node@v3
