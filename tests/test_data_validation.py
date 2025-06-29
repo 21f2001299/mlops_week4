@@ -3,7 +3,7 @@ import pandas as pd
 
 @pytest.fixture(scope="module")
 def iris_df():
-    return pd.read_csv("../iris.csv")
+    return pd.read_csv("iris.csv")
 
 def test_data_shape(iris_df):
     assert iris_df.shape[1] == 5
